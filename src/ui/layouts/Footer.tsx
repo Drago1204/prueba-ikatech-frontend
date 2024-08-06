@@ -1,32 +1,52 @@
 import { Input, Social, Item, FooterList } from "../components";
 
 export const Footer = () => {
-  return (
-    <footer className="mt-10">
-      <Social />
-      <nav className="grid place-content-center sm:grid-cols-2 md:grid-cols-4 text-center md:text-left  p-20 gap-5 md:gap-2">
-        <FooterList title="Servicio al cliente">
-          <Item title="Contáctenos" />
-          <Item title="Cambios y devoluciones" />
-          <Item title="Políticas de la tienda" />
-          <Item title="Políticas de datos" />
-        </FooterList>
-        <FooterList title="Mi cuenta">
-          <Item title="Mis pedidos" />
-          <Item title="Mis devoluciones" />
-        </FooterList>
-        <FooterList title="Recursos">
-          <Item title="Tiendas" />
-          <Item title="Devoluciones" />
-        </FooterList>
-        <FooterList title="Newsletter">
+  const sectionsList = [
+    {
+      title: "Servicio al cliente",
+      items: [
+        "Contáctenos",
+        "Cambios y devoluciones",
+        "Políticas de la tienda",
+        "Políticas de datos",
+      ],
+    },
+    {
+      title: "Mi cuenta",
+      items: ["Mis pedidos", "Mis devoluciones"],
+    },
+    {
+      title: "Recursos",
+      items: ["Tiendas", "Devoluciones"],
+    },
+    {
+      title: "Newsletter",
+      content: (
+        <>
           <p className="text-gray-500 normal-case">
             Regístrate para ser el primero en recibir nuestras noticias
           </p>
           <form action="#">
             <Input placeholder="E-mail" />
           </form>
-        </FooterList>
+        </>
+      ),
+    },
+  ];
+
+  return (
+    <footer className="mt-10">
+      <Social />
+      <nav className="grid place-content-center sm:grid-cols-2 md:grid-cols-4 text-center md:text-left p-20 gap-5 md:gap-2">
+        {sectionsList.map((section, index) => (
+          <FooterList key={index} title={section.title}>
+            {section.items
+              ? section.items.map((item, idx) => (
+                  <Item key={idx} title={item} />
+                ))
+              : section.content}
+          </FooterList>
+        ))}
       </nav>
     </footer>
   );
