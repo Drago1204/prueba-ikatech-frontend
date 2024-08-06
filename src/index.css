@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .slick-arrow {
+    display: none !important;
+  }
+}
+
+.slick-track {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.slick-slide > div > div {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

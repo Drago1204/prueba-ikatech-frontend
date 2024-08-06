@@ -1,10 +1,31 @@
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { Loading } from "./ui/components";
+import { useAppSelector } from "./hooks";
+import { Footer, Header, Main } from "./ui/layouts";
+import { getProducts } from "./store/thunk";
 
+const App = () => {
+  const dispatch = useDispatch();
 
-function App() {
+  const { isLoading } = useAppSelector((state) => state.products);
+
+  useEffect(() => {
+    // @ts-expect-error: Ignoring type error 
+    dispatch(getProducts());
+  }, [dispatch]);
+
+  if (isLoading) {
+    return <Loading />;
+  }
 
   return (
-    <h1>Hola</h1>
-  )
-}
+    <>
+      <Header />
+      <Main />
+      <Footer />
+    </>
+  );
+};
 
-export default App
+export default App;

@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Zapato azul",
+    "price": 5000,
+    "reference": "G40",
+    "photo": "1.jpg"
+  },
+  {
+    "name": "Zapato rojo",
+    "price": 5000,
+    "reference": "G40",
+    "photo": "2.jpg"
+  },
+  {
+    "name": "Zapato verde",
+    "price": 5000,
+    "reference": "G40",
+    "photo": "3.jpg"
+  },
+  {
+    "name": "Zapato gris",
+    "price": 5000,
+    "reference": "G40",
+    "photo": "4.jpg"
+  },
+  {
+    "name": "Zapato cafe",
+    "price": 5000,
+    "reference": "G40",
+    "photo": "5.jpg"
+  },
+  {
+    "name": "Zapato miel",
+    "price": 5000,
+    "reference": "G40",
+    "photo": "6.jpg"
+  },
+  {
+    "name": "Zapato aguamarina",
+    "price": 5000,
+    "reference": "G40",
+    "photo": "7.jpg"
+  },
+  {
+    "name": "Zapato piel",
+    "price": 5000,
+    "reference": "G40",
+    "photo": "8.jpg"
+  },
+  {
+    "name": "Zapato perla",
+    "price": 5000,
+    "reference": "G40",
+    "photo": "9.jpg"
+  },
+  {
+    "name": "Zapato marinado",
+    "price": 5000,
+    "reference": "G40",
+    "photo": "10.jpg"
+  },
+  {
+    "name": "Zapato azul1",
+    "price": 5000,
+    "reference": "G40",
+    "photo": "11.jpg"
+  },
+  {
+    "name": "Zapato azul2",
+    "price": 5000,
+    "reference": "G40",
+    "photo": "12.jpg"
+  },
+  {
+    "name": "Zapato azul3",
+    "price": 5000,
+    "reference": "G40",
+    "photo": "13.jpg"
+  },
+  {
+    "name": "Zapato azul4",
+    "price": 5000,
+    "reference": "G40",
+    "photo": "14.jpg"
+  },
+  {
+    "name": "Zapato azul5",
+    "price": 5000,
+    "reference": "G40",
+    "photo": "15.jpg"
+  },
+  {
+    "name": "Zapato azul6",
+    "price": 5000,
+    "reference": "G40",
+    "photo": "16.jpg"
+  },
+  {
+    "name": "Zapato azul7",
+    "price": 5000,
+    "reference": "G40",
+    "photo": "17.jpg"
+  },
+  {
+    "name": "Zapato azul8",
+    "price": 5000,
+    "reference": "G40",
+    "photo": "18.jpg"
+  },
+  {
+    "name": "Zapato azul9",
+    "price": 5000,
+    "reference": "G40",
+    "photo": "19.jpg"
+  },
+  {
+    "name": "Zapato azul10",
+    "price": 5000,
+    "reference": "G40",
+    "photo": "20.jpg"
+  }
+]
